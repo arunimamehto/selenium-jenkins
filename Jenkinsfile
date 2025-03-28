@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/AmazonTestProject.git'  // Replace with your repo
+                git credentialsId: 'github-cc', git 'https://github.com/arunimamehto/selenium-jenkins.git'  // Replace with your repo
             }
         }
 
