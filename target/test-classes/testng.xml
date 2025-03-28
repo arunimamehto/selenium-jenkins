@@ -1,0 +1,7 @@
+<suite name="Amazon Test Suite">
+    <test name="Search Product Tests">
+        <classes>
+            <class name="com.oshin.tests.steps.SearchProductSteps"/>
+        </classes>
+    </test>
+</suite>
