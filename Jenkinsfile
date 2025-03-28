@@ -1,10 +1,10 @@
 pipeline {
-    agent any  // Runs on any available Jenkins agent
+    agent any
 
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'github-cc', git 'https://github.com/arunimamehto/selenium-jenkins.git'  // Replace with your repo
+                git branch: 'main', credentialsId: 'github-cc', url: 'https://github.com/arunimamehto/selenium-jenkins.git'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
 
     post {
         always {
-            junit '**/target/surefire-reports/*.xml'  // Collect JUnit-compatible reports
+            junit '**/target/surefire-reports/*.xml'  // Publish test results
         }
     }
 }
