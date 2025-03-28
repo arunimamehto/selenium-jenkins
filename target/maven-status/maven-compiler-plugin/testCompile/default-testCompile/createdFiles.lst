@@ -1,0 +1,3 @@
+com\oshin\tests\scenarios\SearchProductTestRunner.class
+com\oshin\tests\base\BaseTest.class
+com\oshin\tests\steps\SearchProductSteps.class
